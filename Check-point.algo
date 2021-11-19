@@ -1,0 +1,21 @@
+ALGORITHM Checkpoint_Algo
+VAR
+     mot,i,v :INTEGER 
+     phrase : STRING
+     c: CHAR
+BEGIN
+i:=1
+mot:=0
+v:=0
+ WHILE (c<>".") DO
+     i:=i+1
+   IF (c=" ") THEN
+       mot:=mot +1
+   END_IF
+    IF ((c in {"a","i","y","e","u","o"}) or (c in {"A","I","Y","E","U","O"})) THEN
+        v:=v+1
+    END_IF
+ END_WHILE
+ 
+
+END
